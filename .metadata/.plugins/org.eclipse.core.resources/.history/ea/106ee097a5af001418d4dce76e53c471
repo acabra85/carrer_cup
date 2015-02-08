@@ -1,0 +1,7 @@
+package co.edu.problems;
+
+public class Exemplify {
+	public static void main(String[] args) {
+		
+	}
+}
