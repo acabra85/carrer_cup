@@ -1,0 +1,15 @@
+package co.edu.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class AngleHourMinutesTest {
+
+	
+	@Test
+	public void test() {
+		assert();
+	}
+
+}

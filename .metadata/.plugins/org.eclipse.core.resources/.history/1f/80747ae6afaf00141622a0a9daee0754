@@ -1,0 +1,43 @@
+package co.edu.test;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+
+import org.joda.time.LocalTime;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import co.edu.problems.Exemplify;
+
+public class AngleHourMinutesTest {
+
+	static ArrayList<LocalTime> times;
+	static ArrayList<String> angles;
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+		times = new ArrayList<LocalTime>();
+		angles = new ArrayList<String>();
+		
+		times.add(LocalTime.parse("10:45:00"));
+		angles.add("300:270");
+		
+		times.add(LocalTime.parse("11:15:00"));
+		angles.add("330:910");
+		
+		
+	}
+
+	@Test
+	public void test() {
+		String res = "";
+		String stored = "";
+		for(int i = 0; i<times.size();i++){
+			res = Exemplify.getAngle(times.get(i));
+			stored = angles.get(i);
+			System.out.println(res + "..." + stored);
+			assertTrue(res.equals(stored));			
+		}
+	}
+
+}

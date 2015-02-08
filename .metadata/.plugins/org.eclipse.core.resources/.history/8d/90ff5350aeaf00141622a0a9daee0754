@@ -1,0 +1,22 @@
+package co.edu.problems;
+
+import org.joda.time.LocalTime;
+
+public class Exemplify {
+	
+	public static void main(String[] args) {
+		System.out.println("Calculate angle between Hand and Minute for a given hour");
+		System.out.println(getAngle(new LocalTime()));
+	}
+	
+	public static float getAngle(LocalTime time){
+		int min = time.getMinuteOfHour();
+		int hour = time.getHourOfDay();
+		System.out.println("" + hour + ":" + min);
+		System.out.println("12 angle and "+ hour + ": " + (360/12*hour) );
+		System.out.println("12 angle and "+ min + ": " + (360/60*min) );
+		return 0.0f;
+	}
+	
+	
+}

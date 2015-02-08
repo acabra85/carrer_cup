@@ -1,0 +1,25 @@
+package co.edu.problems;
+
+
+public class Exemplify {
+	
+	public static void main(String[] args) {
+		System.out.println("Calculate angle between Hand and Minute for a given hour");
+	}
+	
+	public static String getAngleRespectiveTo12(int hour, int min){
+		String angMin = (360/60*(min%60))+"";
+		String angHour = (360/12*(hour%12))+"";
+		return angHour+ ":" + angMin;
+	}
+	
+	public static String getAngleBetweenHourMinute(int hour, int min){
+		float [] arr = new float[2];
+		String [] arrStr = getAngleRespectiveTo12(hour, min).split(":");
+		arr[0] = Float.parseFloat(arrStr[0]);
+		arr[1] = Float.parseFloat(arrStr[1]);
+		return ""+(arr[0]>arr[1]?arr[0]-arr[1]:arr[1]-arr[0]);
+	}
+	
+	
+}
