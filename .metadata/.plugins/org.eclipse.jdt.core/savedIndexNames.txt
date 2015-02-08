@@ -6,7 +6,6 @@ INDEX VERSION 1.127+/home/acs/workspaces/carrer_cup/.metadata/.plugins/org.eclip
 4196892199.index
 4175669222.index
 1070788010.index
-942863787.index
 1184931099.index
 2016060422.index
 1311961843.index
