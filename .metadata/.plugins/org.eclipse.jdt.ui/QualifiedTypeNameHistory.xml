@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="co.edu.problems.Exemplify"/>
+<fullyQualifiedTypeName name="org.joda.time.LocalTime"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="co.edu.problems.PermutationsString"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+</qualifiedTypeNameHistroy>

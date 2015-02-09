@@ -1,0 +1,30 @@
+package co.edu.test.permutation;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import co.edu.problems.PermutationsString;
+
+public class PermutationStringTest {
+
+	static ArrayList<String> stringTests;
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+		stringTests = new ArrayList<String>();
+		
+		stringTests.add("abc");
+	}
+
+	@Test
+	public void test() {
+		for(String str: stringTests) {
+			System.out.println(Arrays.toString(PermutationsString.permutations(str)));
+		}
+	}
+
+}
